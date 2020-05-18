@@ -1,0 +1,7 @@
+---
+
+tekkit_url: http://servers.technicpack.net/Technic/servers/tekkit-legends/Tekkit_Legends_Server_v1.1.1.zip
+
+tekkit_file_md5: 5bc271befbb14d8e29b4889069c7e108
+
+tekkit_filename: "{{ tekkit_url | basename }}"

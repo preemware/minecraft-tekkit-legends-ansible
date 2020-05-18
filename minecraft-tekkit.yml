@@ -1,0 +1,13 @@
+---
+
+- name: Provision a tekkit legends minecraft server
+  hosts: all
+  become: yes
+  become_user: root
+  remote_user: root
+  vars:
+    minecraft_home: /opt/minecraft
+
+  roles:
+    - base-server
+    - tekkit

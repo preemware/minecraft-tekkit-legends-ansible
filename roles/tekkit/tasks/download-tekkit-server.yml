@@ -1,0 +1,7 @@
+---
+
+- name: get tekkit server zip
+  get_url:
+    url: "{{ tekkit_url }}"
+    dest: "/tmp"
+    checksum: "md5:{{ tekkit_file_md5 }}"

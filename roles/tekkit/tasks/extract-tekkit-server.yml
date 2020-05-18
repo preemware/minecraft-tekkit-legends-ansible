@@ -1,0 +1,9 @@
+---
+
+- name: extract tekkit server
+  unarchive:
+    src: /tmp/{{ tekkit_filename }}
+    dest: "{{ minecraft_home }}"
+    remote_src: yes
+    owner: minecraft
+    group: minecraft

@@ -1,0 +1,7 @@
+---
+
+- include: download-tekkit-server.yml
+- include: extract-tekkit-server.yml
+
+- name: restart minecraft-server
+  service: name=minecraft-server state=restarted enabled=yes
