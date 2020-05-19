@@ -4,8 +4,4 @@
     port: 25565/tcp
     permanent: yes
     state: enabled
-
-- name: reload service firewalld
-  systemd:
-    name: firewalld
-    state: reloaded
+    immediate: yes
